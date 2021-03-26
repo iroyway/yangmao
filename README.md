@@ -1,7 +1,7 @@
 # dust
   #### 尘归尘 土归土
   #### 繁华 不过一拘细沙
-  ![](https://raw.githubusercontent.com/monk-coder/dust/main/pics/readme.jpg)
+  ![](https://raw.githubusercontent.com/monk-coder/dust/dust/pics/readme.jpg)
 # waring
 - 这不是一个开源项目，只是把GitHub当作一个代码的存储空间，本项目不接受任何开源要求。
 - 仅用于学习研究，禁止用于商业用途，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
