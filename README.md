@@ -17,5 +17,5 @@
 [  电报通知  ](https://t.me/monk_dust_channel)
 
  # 特别感谢
- 脚本使用了 [  @chavyleung  ](https://github.com/chavyleung) 的 `Env` 函数
- 经过柘柘授权，会把他之前的脚本存放在本仓库中。
+ - 脚本使用了 [  @chavyleung  ](https://github.com/chavyleung) 的 `Env` 函数
+ - 经过柘柘授权，会把他之前的脚本存放在本仓库中。
