@@ -1,6 +1,5 @@
 /*
 关注有礼
-跟柘柘的粉丝互动是一个道理
 
 更新地址：https://raw.githubusercontent.com/monk-coder/dust/dust/normal/monk_shop_follow_sku.js
 ============Quantumultx===============
