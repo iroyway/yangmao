@@ -18,7 +18,14 @@
     },
     {
       "config": "3 20 * * * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_shake.js, tag=摇一摇, img-url=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/img/icon.png, enabled=true"
+    },
+    {
+      "config": "10 10 1-3 4 * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_xmf.js, tag=京东小魔方, img-url=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/img/icon.png, enabled=true"
+    },
+    {
+      "config": "0 0,10 1-20 4 * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js, tag=手机狂欢城, img-url=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/img/icon.png, enabled=true"
     }
+
   ],
   "description": "https://github.com/i-chenzhe/qx"
 }
