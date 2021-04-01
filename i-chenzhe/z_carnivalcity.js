@@ -1,7 +1,7 @@
 
 /*
 手机狂欢城
-活动入口: https://carvinalcity.m.jd.com
+活动入口: https://carnivalcity.m.jd.com
 活动时间： 4月1日-4月20日
 
 已支持IOS双京东账号,Node.js支持N个京东账号
@@ -9,14 +9,14 @@
 ============Quantumultx===============
 [task_local]
 #手机狂欢城
-0 0 1-20 4 * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js, tag=手机狂欢城, enabled=true
+0 0,10 1-20 4 * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js, tag=手机狂欢城, enabled=true
 ================Loon==============
 [Script]
-cron "0 0 1-20 4 *" script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js,tag=手机狂欢城
+cron "0 0,10 1-20 4 *" script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js,tag=手机狂欢城
 ===============Surge=================
-手机狂欢城 = type=cron,cronexp="0 0 1-20 4 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js
+手机狂欢城 = type=cron,cronexp="0 0,10 1-20 4 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js
 ============小火箭=========
-手机狂欢城 = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js, cronexpr="0 0 1-20 4 *", timeout=3600, enable=true
+手机狂欢城 = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js, cronexpr="0 0,10 1-20 4 *", timeout=3600, enable=true
 */
 const $ = new Env('手机狂欢城');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
