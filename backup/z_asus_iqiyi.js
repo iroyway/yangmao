@@ -10,18 +10,15 @@
 ============Quantumultx===============
 [task_local]
 #华硕-iqiyi
-0 0 22-28 2 * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/jd_asus_iqiyi.js, tag=华硕-iqiyi, enabled=true
+0 0 5-11 4 * https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_asus_iqiyi.js, tag=华硕-iqiyi, enabled=true
 ================Loon==============
 [Script]
-cron "0 0 22-28 2 *" script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/jd_asus_iqiyi.js,tag=华硕-iqiyi
+cron "0 0 5-11 4 *" script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_asus_iqiyi.js,tag=华硕-iqiyi
 ===============Surge=================
-华硕-iqiyi = type=cron,cronexp="0 0 22-28 2 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/jd_asus_iqiyi.js
+华硕-iqiyi = type=cron,cronexp="0 0 5-11 4 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_asus_iqiyi.js
 ============小火箭=========
-华硕-iqiyi = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/jd_asus_iqiyi.js, cronexpr="0 0 22-28 2 *", timeout=3600, enable=true
+华硕-iqiyi = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_asus_iqiyi.js, cronexpr="0 0 5-11 4 *", timeout=3600, enable=true
 
-脚本内置了一个给作者任务助力的网络请求，默认开启，如介意请自行关闭。
-助力活动链接： https://h5.m.jd.com/babelDiy/Zeus/4ZK4ZpvoSreRB92RRo8bpJAQNoTq/index.html
-参数 helpAuthor = false
 */
 // prettier-ignore
 !function (t, r) { "object" == typeof exports ? module.exports = exports = r() : "function" == typeof define && define.amd ? define([], r) : t.CryptoJS = r() }(this, function () {
@@ -67,7 +64,7 @@ if ($.isNode()) {
       $.index = i + 1;
       $.isLogin = true;
       $.nickName = '';
-      await TotalBean();
+      await checkCookie();
       console.log(`\n******开始【京东账号${$.index}】${$.nickName || $.UserName}*********\n`);
       if (!$.isLogin) {
         $.msg($.name, `【提示】cookie已失效`, `京东账号${$.index} ${$.nickName || $.UserName}\n请重新登录获取\nhttps://bean.m.jd.com/bean/signIndex.action`, { "open-url": "https://bean.m.jd.com/bean/signIndex.action" });
@@ -75,9 +72,6 @@ if ($.isNode()) {
           await notify.sendNotify(`${$.name}cookie已失效 - ${$.UserName}`, `京东账号${$.index} ${$.UserName}\n请重新登录获取cookie`);
         }
         continue
-      }
-      if (helpAuthor) {
-        new Promise(resolve => { $.get({ url: 'https://api.r2ray.com/jd.bargain/index' }, (err, resp, data) => { try { if (data) { $.dataGet = JSON.parse(data); if ($.dataGet.data.length !== 0) { let opt = { url: `https://api.m.jd.com/client.action`, headers: { 'Host': 'api.m.jd.com', 'Content-Type': 'application/x-www-form-urlencoded', 'Origin': 'https://h5.m.jd.com', 'Accept-Encoding': 'gzip, deflate, br', 'Cookie': cookie, 'Connection': 'keep-alive', 'Accept': 'application/json, text/plain, */*', 'User-Agent': 'jdapp;iPhone;9.4.0;14.3;;network/wifi;ADID/;supportApplePay/0;hasUPPay/0;hasOCPay/0;model/iPhone10,3;addressid/;supportBestPay/0;appBuild/167541;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1', 'Referer': `https://h5.m.jd.com/babelDiy/Zeus/4ZK4ZpvoSreRB92RRo8bpJAQNoTq/index.html?serveId=wxe30973feca923229&actId=${$.dataGet.data[0].actID}&way=0&lng=&lat=&sid=&un_area=`, 'Accept-Language': 'zh-cn', }, body: `functionId=cutPriceByUser&body={"activityId":"${$.dataGet.data[0].actID}","userName":"","followShop":1,"shopId":${$.dataGet.data[0].actsID},"userPic":""}&client=wh5&clientVersion=1.0.0` }; return new Promise(resolve => { $.post(opt, (err, ersp, data) => { }) }); } } } catch (e) { console.log(e); } finally { resolve(); } }) })
       }
       $.bean = 0;
       await ASUS_iqiyi();
@@ -255,56 +249,46 @@ function taskUrl(function_id) {
   }
 }
 
-function TotalBean() {
-  return new Promise(async resolve => {
-    const options = {
-      "url": `https://wq.jd.com/user/info/QueryJDUserInfo?sceneval=2`,
-      "headers": {
-        "Accept": "application/json,text/plain, */*",
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Accept-Language": "zh-cn",
-        "Connection": "keep-alive",
-        "Cookie": cookie,
-        "Referer": "https://wqs.jd.com/my/jingdou/my.shtml?sceneval=2",
-        "User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0") : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0")
+function checkCookie() {
+  const options = {
+      url: "https://me-api.jd.com/user_new/info/GetJDUserInfoUnion",
+      headers: {
+          "Host": "me-api.jd.com",
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "Cookie": cookie,
+          "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1",
+          "Accept-Language": "zh-cn",
+          "Referer": "https://home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&",
+          "Accept-Encoding": "gzip, deflate, br",
       }
-    }
-    $.post(options, (err, resp, data) => {
-      try {
-        if (err) {
-          console.log(`${JSON.stringify(err)}`)
-          console.log(`${$.name} API请求失败，请检查网路重试`)
-        } else {
-          if (data) {
-            data = JSON.parse(data);
-            if (data['retcode'] === 13) {
-              $.isLogin = false; //cookie过期
-              return
-            }
-            $.nickName = data['base'].nickname;
-          } else {
-            console.log(`京东服务器返回空数据`)
+  };
+  return new Promise(resolve => {
+      $.get(options, (err, resp, data) => {
+          try {
+              if (err) {
+                  $.logErr(err)
+              } else {
+                  if (data) {
+                      data = JSON.parse(data);
+                      if (data.retcode === "1001") {
+                          $.isLogin = false; //cookie过期
+                          return;
+                      }
+                      if (data.retcode === "0" && data.data.hasOwnProperty("userInfo")) {
+                          $.nickName = data.data.userInfo.baseInfo.nickname;
+                      }
+                  } else {
+                      $.log('京东返回了空数据');
+                  }
+              }
+          } catch (e) {
+              $.logErr(e)
+          } finally {
+              resolve();
           }
-        }
-      } catch (e) {
-        $.logErr(e, resp)
-      } finally {
-        resolve();
-      }
-    })
+      })
   })
-}
-function safeGet(data) {
-  try {
-    if (typeof JSON.parse(data) == "object") {
-      return true;
-    }
-  } catch (e) {
-    console.log(e);
-    console.log(`京东服务器访问数据为空，请检查自身设备网络情况`);
-    return false;
-  }
 }
 function encrypt(t) {
   var e = t,
