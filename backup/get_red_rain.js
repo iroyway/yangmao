@@ -2,17 +2,16 @@ const $ = new Env('获取红包雨参数');
 const body = $response.body;
 !(async () => {
     data = JSON.parse(body)
-    if (data.data && data.data.iconArea)
-        act = data.data.iconArea.filter(vo => vo['type'] === "platform_red_packege_rain")[0]
+    if (data.data && data.data.iconArea) { act = data.data.iconArea.filter(vo => vo['type'] === "platform_red_packege_rain")[0] }
+
     if (act) {
         let url = act.data.activityUrl
         $.activityId = url.substr(url.indexOf("id=") + 3)
         $.st = act.startTime
         $.ed = act.endTime
-        await updataBody({'actID':$.activityId,'st':$.st,'et':$.ed})
+        await updataBody({ 'actID': $.activityId, 'st': $.st, 'et': $.ed })
     } else {
-        $.msg('这个直播间没有找到红包雨','请换个直播间尝试。')
-        console.log(`暂无红包雨`)
+        $.msg('这个直播间没有找到红包雨', '请换个直播间尝试。')
     }
 })()
     .catch((e) => {
