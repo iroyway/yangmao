@@ -8,12 +8,11 @@
 #京东直播雨
 1 0,9,11,13,15,17,19,20,21,23 * 4-6 * https://raw.githubusercontent.com/monk-coder/dust/dust/backup/red_rain.js, tag=京东直播雨, enabled=true
 [rewrite_local]
-^https://api\.m\.jd\.com/client\.action\?functionId\=liveActivityV946 url script-request-body https://raw.githubusercontent.com/monk-coder/dust/dust/backup/get_red_rain.js
+^https://api\.m\.jd\.com/client\.action\?functionId\=liveActivityV946 url script-response-body https://raw.githubusercontent.com/monk-coder/dust/dust/backup/get_red_rain.js
  */
 const $ = new Env('红包雨');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let cookiesArr = [], cookie = '', message;
-let helpAuthor = true;//为作者助力的开关
 if ($.isNode()) {
     Object.keys(jdCookieNode).forEach((item) => {
         cookiesArr.push(jdCookieNode[item])
@@ -55,6 +54,7 @@ if ($.isNode()) {
                 await receiveRedRain({ "actId": $.actInfo.actID });
             } else {
                 $.log("从服务器中没有成功获取到红包雨参数.");
+                return;
             }
         }
     }
