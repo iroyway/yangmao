@@ -75,7 +75,7 @@ function taskUrl(function_id, body = {}) {
             "Connection": "keep-alive",
             "Content-Type": "application/x-www-form-urlencoded",
             "Host": "api.m.jd.com",
-            "Referer": `https://h5.m.jd.com/active/redrain/index.html?id=${$.activityId}&lng=0.000000&lat=0.000000&sid=&un_area=`,
+            "Referer": `https://h5.m.jd.com/active/redrain/index.html?id=${$.actInfo.actID}&lng=0.000000&lat=0.000000&sid=&un_area=`,
             "Cookie": cookie,
             "User-Agent": "JD4iPhone/9.3.5 CFNetwork/1209 Darwin/20.2.0"
         }
