@@ -11,18 +11,18 @@
 助力活动链接： https://h5.m.jd.com/babelDiy/Zeus/4ZK4ZpvoSreRB92RRo8bpJAQNoTq/index.html
 参数 helpAuthor = false
 
-更新地址：https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_entertainment.js
+更新地址：https://share.r2ray.com/dust/i-chenzhe/z_entertainment.js
 ============Quantumultx===============
 [task_local]
 #百变大咖秀
-10 10,11 * * 2-5 https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_entertainment.js, tag=百变大咖秀,  enabled=true
+10 10,11 * * 2-5 https://share.r2ray.com/dust/i-chenzhe/z_entertainment.js, tag=百变大咖秀,  enabled=true
 ================Loon==============
 [Script]
-cron "10 10,11 * * 2-5" script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_entertainment.js,tag=百变大咖秀
+cron "10 10,11 * * 2-5" script-path=https://share.r2ray.com/dust/i-chenzhe/z_entertainment.js,tag=百变大咖秀
 ===============Surge=================
-百变大咖秀 = type=cron,cronexp="10 10,11 * * 2-5",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_entertainment.js
+百变大咖秀 = type=cron,cronexp="10 10,11 * * 2-5",wake-system=1,timeout=3600,script-path=https://share.r2ray.com/dust/i-chenzhe/z_entertainment.js
 ============小火箭=========
-百变大咖秀 = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_entertainment.js, cronexpr="10 10,11 * * 2-5", timeout=3600, enable=true
+百变大咖秀 = type=cron,script-path=https://share.r2ray.com/dust/i-chenzhe/z_entertainment.js, cronexpr="10 10,11 * * 2-5", timeout=3600, enable=true
 */
 
 

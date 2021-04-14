@@ -9,14 +9,14 @@
 ============Quantumultx===============
 [task_local]
 #手机狂欢城
-2 0-18/6 1-20 4 * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js, tag=手机狂欢城, enabled=true
+2 0-18/6 1-20 4 * https://share.r2ray.com/dust/i-chenzhe/z_carnivalcity.js, tag=手机狂欢城, enabled=true
 ================Loon==============
 [Script]
-cron "2 0-18/6 1-20 4 *" script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js,tag=手机狂欢城
+cron "2 0-18/6 1-20 4 *" script-path=https://share.r2ray.com/dust/i-chenzhe/z_carnivalcity.js,tag=手机狂欢城
 ===============Surge=================
-手机狂欢城 = type=cron,cronexp="2 0-18/6 1-20 4 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js
+手机狂欢城 = type=cron,cronexp="2 0-18/6 1-20 4 *",wake-system=1,timeout=3600,script-path=https://share.r2ray.com/dust/i-chenzhe/z_carnivalcity.js
 ============小火箭=========
-手机狂欢城 = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js, cronexpr="2 0-18/6 1-20 4 *", timeout=3600, enable=true
+手机狂欢城 = type=cron,script-path=https://share.r2ray.com/dust/i-chenzhe/z_carnivalcity.js, cronexpr="2 0-18/6 1-20 4 *", timeout=3600, enable=true
 */
 const $ = new Env('手机狂欢城');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
