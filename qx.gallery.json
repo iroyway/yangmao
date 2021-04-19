@@ -2,6 +2,12 @@
   "name": "藏经阁",
   "task": [
     {
+      "config": "25 * * * * https://share.r2ray.com/dust/i-chenzhe/z_health_energy.js, tag=健康社区-收能量,  img-url=https://share.r2ray.com/dust/i-chenzhe/img/icon.png, enabled=true"
+    },
+    {
+      "config": "25 10-22/3 * * * https://share.r2ray.com/dust/i-chenzhe/z_health_community.js, tag=健康社区,  img-url=https://share.r2ray.com/dust/i-chenzhe/img/icon.png, enabled=true"
+    },
+    {
       "config": "0 0,1-22/2 1-31 4-7 * https://share.r2ray.com/dust/member/monk_pasture.js, tag=有机牧场, img-url=https://share.r2ray.com/dust/i-chenzhe/img/icon.png, enabled=true"
     },
     {
