@@ -6,7 +6,7 @@ TCLxLINING
 
 活动期间，每个账号仅允许助力一位好友，脚本默认助力作者，
 如要修改请运行脚本并在获得助力码后立即中止脚本，去添加助力码变量后重新运行脚本。
-环境变量：export Z_TCL_LINING = ''
+环境变量：export Z_TCL_LINING=''
 
 ============Quantumultx===============
 [task_local]
@@ -24,7 +24,7 @@ TCLxLINING = type=cron,script-path=https://share.r2ray.com/dust/car/z_tcl_lining
 
 活动期间，每个账号仅允许助力一位好友，脚本默认助力作者，
 如要修改请运行脚本并在获得助力码后立即中止脚本，去添加助力码变量后重新运行脚本。
-环境变量：export Z_TCL_LINING = ''
+环境变量：export Z_TCL_LINING=''
 */
 const $ = new Env('TCLxLINING');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
