@@ -1,6 +1,6 @@
 /*
 TCLxLINING
-活动入口：TCL京东自营旗舰店
+活动入口：TCL电视京东自营旗舰店
 更新地址：https://share.r2ray.com/dust/car/z_tcl_liling.js
 
 
