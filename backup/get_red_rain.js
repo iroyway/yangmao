@@ -3,6 +3,7 @@ const body = $response.body;
 !(async () => {
     data = JSON.parse(body)
     if (data.data && data.data.iconArea) { act = data.data.iconArea.filter(vo => vo['type'] === "platform_red_packege_rain")[0] }
+    if (data.data && data.data.iconArea) { act = data.data.iconArea.filter()
 
     if (act) {
         let url = act.data.activityUrl
