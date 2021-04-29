@@ -1,12 +1,15 @@
-const $ = new Env('获取红包雨参数');
+const $ = new Env('超级值播间');
 const body = $response.body;
 !(async () => {
     data = JSON.parse(body)
-    if (data.data && data.data.iconArea) { act = data.data.iconArea.filter(vo => vo['type'] === "platform_red_packege_rain")[0] }
+    if (data.data && data.data.iconArea) { rain = data.data.iconArea.filter(vo => vo['type'] === "platform_red_packege_rain")[0] };
     if (data.data && data.data.iconArea) { act = data.data.iconArea.filter()
+        
+    }
 
-    if (act) {
-        let url = act.data.activityUrl
+
+    if (rain) {
+        let url = rain.data.activityUrl
         $.activityId = url.substr(url.indexOf("id=") + 3)
         $.st = act.startTime
         $.ed = act.endTime
