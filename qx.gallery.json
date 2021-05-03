@@ -42,9 +42,6 @@
     },
     {
       "config": "3 0,10,23 * * * https://raw.githubusercontent.com/monk-coder/dust/dust/normal/monk_shop_lottery.js, tag=店铺大转盘, img-url=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/img/icon.png, enabled=true"
-    },
-    {
-      "config": "5 1,6,11,16,21 * 3-4 *  https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_super5g.js, tag=5G超级盲盒,img-url=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/img/icon.png, enabled=true"
     }
   ],
   "description": "非开源 https://raw.githubusercontent.com/monk-coder/dust"
