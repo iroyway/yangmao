@@ -2,6 +2,7 @@
 TCLxLINING
 活动入口：TCL电视京东自营旗舰店
 更新地址：https://share.r2ray.com/dust/car/z_tcl_lining.js
+活动地址：https://mpdz-isv.isvjcloud.com/ql/front/tcl002/loadTclAct?id=tclTeamAct002&user_id=10299171
 
 
 活动期间，每个账号仅允许助力一位好友，脚本默认助力作者，
