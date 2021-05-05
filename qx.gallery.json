@@ -1,9 +1,6 @@
 {
   "name": "藏经阁",
-  "task": [ 
-    {
-      "config": "25 8 * 4-5 * https://raw.githubusercontent.com/monk-coder/dust/dust/car/z_tcl_liling.js, tag=TCLxLINING,   img-url=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/img/icon.png, enabled=true"
-    },
+  "task": [
     {
       "config": "15 12 * * * https://raw.githubusercontent.com/monk-coder/dust/dust/car/monk_shop_add_to_car.js, tag=加购有礼,   img-url=https://raw.githubusercontent.com/lion-goose/dust/dust/i-chenzhe/img/icon.png, enabled=true"
     },
