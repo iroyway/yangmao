@@ -1,7 +1,7 @@
 /*
 探秘无限星空
 活动地址：京东app-搜索 探秘无限星空
-活动日期：2021-05-07 至 2021-05-31
+活动日期：2021-05-07 至 2021-05-13
 更新地址：https://raw.githubusercontent.com/monk-coder/dust/dust/car/adolf_ETIP.js
 ============Quantumultx===============
 [task_local]
