@@ -5,7 +5,7 @@
 
 脚本默认开通一个飞利浦会员，加购任务默认不做。
 该脚本执行时间非常长，请耐心。
-环境变量 export ADOLF_ADDSKU=“true”//执行加购任务
+环境变量 export ADOLF_ADDSKU="true"//执行加购任务
 
 更新地址：https://raw.githubusercontent.com/monk-coder/dust/dust/member/adolf_flp.js
 ============Quantumultx===============

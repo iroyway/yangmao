@@ -4,7 +4,7 @@
 活动日期：2021-05-18 至 2021-06-20
 
 脚本默认开通一个一加会员，加购任务默认不做。
-环境变量 export ADOLF_ADDSKU=“true”//执行加购任务
+环境变量 export ADOLF_ADDSKU="true"//执行加购任务
 
 更新地址：https://raw.githubusercontent.com/monk-coder/dust/dust/member/adolf_oneplus.js
 ============Quantumultx===============
