@@ -1,6 +1,6 @@
 /*
 赢一加新品手机
-活动地址：https://lzdz1-isv.isvjcloud.com/dingzhi/flp/game/activity?activityId=dz2105100000109501&lng=00.000000&lat=00.000000&sid=&un_area=
+活动地址：https://lzdz1-isv.isvjcloud.com/dingzhi/yijia/call/activity?activityId=dz2104100000194732&lng=00.000000&lat=00.000000&sid=&un_area=
 活动日期：2021-05-18 至 2021-06-20
 
 脚本默认开通一个一加会员，加购任务默认不做。
