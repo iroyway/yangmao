@@ -7,18 +7,18 @@
 环境变量 export ADOLF_ADDSKU="true"//执行加购任务
 环境变量 export ADOLF_MARTIN="true"//执行入会任务
 
-更新地址：https://raw.githubusercontent.com/monk-coder/dust/dust/member/adolf_martin.js
+更新地址：https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_martin.js
 ============Quantumultx===============
 [task_local]
 #人头马x博朗
-20 9 20-31 5 * https://raw.githubusercontent.com/monk-coder/dust/dust/member/adolf_martin.js, tag=人头马x博朗,  enabled=true
+20 9 20-31 5 * https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_martin.js, tag=人头马x博朗,  enabled=true
 ================Loon==============
 [Script]
-cron "20 9 20-31 5 *" script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/member/adolf_martin.js,tag=人头马x博朗
+cron "20 9 20-31 5 *" script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_martin.js,tag=人头马x博朗
 ===============Surge=================
-人头马x博朗 = type=cron,cronexp="20 9 20-31 5 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/member/adolf_martin.js
+人头马x博朗 = type=cron,cronexp="20 9 20-31 5 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_martin.js
 ============小火箭=========
-人头马x博朗 = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/member/adolf_martin.js, cronexpr="20 9 20-31 5 *", timeout=3600, enable=true
+人头马x博朗 = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_martin.js, cronexpr="20 9 20-31 5 *", timeout=3600, enable=true
 */
 
 
