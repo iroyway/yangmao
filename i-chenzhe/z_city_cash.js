@@ -2,7 +2,7 @@
 /*
 城城分现金
 活动入口：京东app-搜索“分现金”
-活动时间：2021-03-19 - 2021-03-24
+活动时间：2021-05-24 - 2021-06-05
 
 申明：这是一个及其不公平的脚本！
 申明：这是一个及其不公平的脚本！
@@ -21,14 +21,14 @@
 ============Quantumultx===============
 [task_local]
 #城城分现金
-12 0 19-24 3 * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_city_cash.js, tag=城城分现金, enabled=true
+1 0-23/4 * 5,6 * https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_city_cash.js, tag=城城分现金, enabled=true
 ================Loon==============
 [Script]
-cron "12 0 19-24 3 * " script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_city_cash.js, tag=城城分现金
+cron "1 0-23/4 * 5,6 * " script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_city_cash.js, tag=城城分现金
 ===============Surge=================
-城城分现金 = type=cron,cronexp="12 0 19-24 3 * ",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_city_cash.js
+城城分现金 = type=cron,cronexp="1 0-23/4 * 5,6 * ",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_city_cash.js
 ============小火箭=========
-城城分现金 = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_city_cash.js, cronexpr="12 0 19-24 3 * ", timeout=3600, enable=true
+城城分现金 = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_city_cash.js, cronexpr="1 0-23/4 * 5,6 * ", timeout=3600, enable=true
  */
 
 const $ = new Env('城城分现金');
