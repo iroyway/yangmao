@@ -13,7 +13,6 @@
 - 您必须在下载后的24小时内从计算机或手机中完全删除以上内容.
 
 # 社交
-- [  电报群  ](https://t.me/monk_dust)
 - [  电报通知  ](https://t.me/monk_dust_channel)
 
  # 特别感谢
