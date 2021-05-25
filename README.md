@@ -13,7 +13,7 @@
 - 您必须在下载后的24小时内从计算机或手机中完全删除以上内容.
 
 # 社交
-- [  电报通知  ](https://t.me/monk_dust_channel)
+- [  电报通知  ](https://t.me/monk_dust_channel_channel)
 
  # 特别感谢
  - 脚本使用了 [  @chavyleung  ](https://github.com/chavyleung) 的 `Env` 函数
