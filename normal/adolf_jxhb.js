@@ -1,6 +1,5 @@
 /*
 京喜阶梯红包
-活动地址：https://lzdz1-isv.isvjcloud.com/dingzhi/flp/game/activity?activityId=dz2105100000109501&lng=00.000000&lat=00.000000&sid=&un_area=
 活动日期：2021-04-22 至 2021-06-30
 修改自 TG群友 @echowxsy 提供的源码
 
